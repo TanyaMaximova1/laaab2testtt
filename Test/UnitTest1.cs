@@ -90,7 +90,7 @@ namespace Test
         [Test]
         public void Function()
         {
-            for (double x = -10; x < 10; x += 10)
+            for (double x = -0.01; x < 0.01; x += 0.01)
             {
                 Assert.AreEqual(CalculateByDefaultMethods(x), Calculate(x), 10);
             }
