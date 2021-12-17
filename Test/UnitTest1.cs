@@ -32,6 +32,15 @@ namespace Test
                 Assert.AreEqual(Math.Cos(i), MathMod.Cos(i), 0.0001);
             }
         }
+        
+        [Test]
+        public void Sec()
+        {
+            for (double i = -10; i < 10; i += 0.01)
+            {
+                Assert.AreEqual(1 / Math.Cos(i), MathMod.Sec(i), 0.0001);
+            }
+        }
 
         [Test]
         public void Csc()
